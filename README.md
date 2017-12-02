@@ -83,36 +83,32 @@ This is Udacity sixth project
         
         
         - b. Create a new database user named catalog that has limited permissions to your catalog application database.
+            - connnect to PostgreSQL
+                ```
+                sudo su - postgres 
+                psql
+                ```
+        
+            - create a new database
+                ```
+                CREATE DATABASE catalogdb WITH OWNER catalog;
+                \c catalogdb;
+                REVOKE ALL ON SCHEMA public FROM public;
+                GRANT ALL ON SCHEMA public TO catalog;
+                ```
+    - 4.4 install git 
+        ```
+        sudo apt-get install git
+        ```
+5. Deploy the Item Catalog project.
+    - 5.1 Clone and setup your Item Catalog project 
+        ```
+        sudo git clone https://github.com/leezimu516/item-catalog.git
+        ```
+        
+    - 5.2 set it up
         
         
-        
-        
-        
-  
+## helpful links
+[How To Secure PostgreSQL on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
 
-
-
-### tools
-- python2
-- vagrant
-- virtual machine
-
-### setup
-- install vagrant and  virtual machine
-- clone this repo
-
-### running this task
-Start the Vagrant by `vagrant up` and then log into it with `vagrant ssh`
-
-run `python lots_of_students_with_user.py` to generate sample public data
-
-To execute the program run `prthon itemCatalog.py` in your terminal
-
-Open `localhost:8000` in your brower in order to do operations
-
-
-
-## improvement
-- add facebook login
-- improve style and layout
-- improve data model
