@@ -107,8 +107,10 @@ This is Udacity sixth project
         ```
         
     - 5.2 set it up
+        18.217.82.169
         
         
 ## helpful links
 [How To Secure PostgreSQL on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
-
+[How To Deploy a Flask Application on an Ubuntu VPS](How To Deploy a Flask Application on an Ubuntu VPS)
+[Udacity Forum](https://discussions.udacity.com/c/nd004-full-stack-broadcast)
